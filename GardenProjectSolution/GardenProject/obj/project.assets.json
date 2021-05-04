@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\szmik\\OneDrive\\Dokumenty\\Garden Project\\GardenProjectSolution\\GardenProject\\GardenProject.csproj",
+      "projectUniqueName": "C:\\Users\\szmik\\OneDrive\\Dokumenty\\GardenProject\\GardenProjectSolution\\GardenProject\\GardenProject.csproj",
       "projectName": "GardenProject",
-      "projectPath": "C:\\Users\\szmik\\OneDrive\\Dokumenty\\Garden Project\\GardenProjectSolution\\GardenProject\\GardenProject.csproj",
+      "projectPath": "C:\\Users\\szmik\\OneDrive\\Dokumenty\\GardenProject\\GardenProjectSolution\\GardenProject\\GardenProject.csproj",
       "packagesPath": "C:\\Users\\szmik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\szmik\\OneDrive\\Dokumenty\\Garden Project\\GardenProjectSolution\\GardenProject\\obj\\",
+      "outputPath": "C:\\Users\\szmik\\OneDrive\\Dokumenty\\GardenProject\\GardenProjectSolution\\GardenProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
