@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GardenProject.Menu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace GardenProject
 		public MainWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void FileExit_Click(object sender, RoutedEventArgs e)
+		{
+			Close();
+		}
+
+		private void HelpVersion_Click(object sender, RoutedEventArgs e)
+		{
+			MenuAboutVersion VersionWindow = new MenuAboutVersion();
+			VersionWindow.ShowDialog();
 		}
 	}
 }

@@ -5,38 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GardenProject"
         mc:Ignorable="d"
-        Title="Garden Project" Height="480" Width="910">
+        Title="Garden Project" Height="503" Width="910" ResizeMode="CanMinimize">
+
 	<Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="122*"/>
-			<ColumnDefinition Width="369*"/>
-			<ColumnDefinition Width="83*"/>
-			<ColumnDefinition Width="333*"/>
-		</Grid.ColumnDefinitions>
-		<TabControl x:Name="tabControl" Grid.ColumnSpan="4">
-			<TabItem Header="Rośliny">
-				<Grid Background="#FFE5E5E5">
-					<Image x:Name="image" HorizontalAlignment="Left" Height="374" Margin="5,5,0,0" VerticalAlignment="Top" Width="546" Source="/Rzut_1.png"/>
-					<Separator Margin="354,204,124,0" VerticalAlignment="Top" Height="10" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Left">
-						<Separator.RenderTransform>
-							<TransformGroup>
-								<ScaleTransform ScaleY="1"/>
-								<SkewTransform/>
-								<RotateTransform Angle="90"/>
-								<TranslateTransform/>
-							</TransformGroup>
-						</Separator.RenderTransform>
-					</Separator>
-					<StatusBar Margin="0,396,0,0"/>
+		<DockPanel Margin="0,0,1,0">
+			<Menu DockPanel.Dock="Top" Height="23" Width="910">
+				<MenuItem Header="_Plik">
+					<MenuItem Header="Zapisz" />
+					<MenuItem Header="Wczytaj..." />
+					<Separator />
+					<MenuItem x:Name="FileExit" Header="Wyjdź" Click="FileExit_Click" />
+				</MenuItem>
+				<MenuItem Header="_Dodaj">
+					<MenuItem Header="Dodaj roślinę..." />
+					<MenuItem Header="Dodaj el. architektury..." />
+				</MenuItem>
+				<MenuItem Header="_Ustawienia">
+					<MenuItem Header="Ogólne" />
+					<MenuItem Header="Język" />
+				</MenuItem>
+				<MenuItem Header="_Pomoc">
+					<MenuItem x:Name="HelpVersion" Header="Wersja programu..." Click="HelpVersion_Click" />
+				</MenuItem>
+			</Menu>
+			<TextBox AcceptsReturn="True" />
+		</DockPanel>
+		
+		<Label x:Name="lAddress" Content="Ul. Główna 49A Wrocław 54-061" Margin="10, 20, 0, 0" FontWeight="Bold"/>
+		
+		<TabControl x:Name="tabControl" FlowDirection="RightToLeft" Margin="0,23,0,0">
+			<TabItem Header="Rośliny" Width="100">
+				<Grid Background="#FFE5E5E5" Height="440" VerticalAlignment="Top">
+					<Image x:Name="image" HorizontalAlignment="Right" Height="374" Margin="0,25,10,0" VerticalAlignment="Top" Width="546" Source="/Rzut_1.png"/>
 				</Grid>
 			</TabItem>
-			<TabItem Header="Architektura">
+			<TabItem Header="Architektura" Width="100">
+				<Grid Background="#FFE5E5E5" Height="440" VerticalAlignment="Top">
+					<Image x:Name="image2" HorizontalAlignment="Right" Height="374" Margin="0,25,10,0" VerticalAlignment="Top" Width="546" Source="/Rzut_1.png"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Budżet" Width="100">
 				<Grid Background="#FFE5E5E5"/>
 			</TabItem>
-			<TabItem Header="Budżet">
-				<Grid Background="#FFE5E5E5"/>
-			</TabItem>
+
 		</TabControl>
 
 	</Grid>
+
 </Window>
