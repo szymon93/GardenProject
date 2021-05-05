@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\szmik\OneDrive\Dokumenty\GardenProject\GardenProjectSolution\GardenProject\App.xaml
-2-557481672
+31089180681
 
-6794904481
+8-952741447
 192-1533232326
-MainWindow.xaml;Menu\MenuAboutVersion.xaml;
+MainWindow.xaml;Menu\MenuAboutVersion.xaml;Plants\AddPlantWindow.xaml;
 
-True
+False
 

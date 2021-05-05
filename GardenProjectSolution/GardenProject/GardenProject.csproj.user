@@ -10,12 +10,18 @@
     <Compile Update="Menu\MenuAboutVersion.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Plants\AddPlantWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menu\MenuAboutVersion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Plants\AddPlantWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using GardenProject.Menu;
+using GardenProject.Plants;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,18 @@ namespace GardenProject
 		{
 			MenuAboutVersion VersionWindow = new MenuAboutVersion();
 			VersionWindow.ShowDialog();
+		}
+
+		private void bAddNewPlant_Click(object sender, RoutedEventArgs e)
+		{
+			AddPlantWindow AddPlantWindow = new AddPlantWindow();
+			AddPlantWindow.ShowDialog();
+		}
+
+		private void MenuAddNewPlant_Click(object sender, RoutedEventArgs e)
+		{
+			AddPlantWindow AddPlantWindow = new AddPlantWindow();
+			AddPlantWindow.ShowDialog();
 		}
 	}
 }

@@ -17,7 +17,7 @@
 					<MenuItem x:Name="FileExit" Header="Wyjdź" Click="FileExit_Click" />
 				</MenuItem>
 				<MenuItem Header="_Dodaj">
-					<MenuItem Header="Dodaj roślinę..." />
+					<MenuItem x:Name="MenuAddNewPlant" Header="Dodaj roślinę..." Click="MenuAddNewPlant_Click" />
 					<MenuItem Header="Dodaj el. architektury..." />
 				</MenuItem>
 				<MenuItem Header="_Ustawienia">
@@ -30,26 +30,33 @@
 			</Menu>
 			<TextBox AcceptsReturn="True" />
 		</DockPanel>
-		
+
 		<Label x:Name="lAddress" Content="Ul. Główna 49A Wrocław 54-061" Margin="10, 20, 0, 0" FontWeight="Bold"/>
-		
+
 		<TabControl x:Name="tabControl" FlowDirection="RightToLeft" Margin="0,23,0,0">
-			<TabItem Header="Rośliny" Width="100">
-				<Grid Background="#FFE5E5E5" Height="440" VerticalAlignment="Top">
-					<Image x:Name="image" HorizontalAlignment="Right" Height="374" Margin="0,25,10,0" VerticalAlignment="Top" Width="546" Source="/Rzut_1.png"/>
-				</Grid>
+			<TabItem Header="Budżet" Width="100">
+				<Grid Background="#FFE5E5E5"/>
 			</TabItem>
 			<TabItem Header="Architektura" Width="100">
 				<Grid Background="#FFE5E5E5" Height="440" VerticalAlignment="Top">
 					<Image x:Name="image2" HorizontalAlignment="Right" Height="374" Margin="0,25,10,0" VerticalAlignment="Top" Width="546" Source="/Rzut_1.png"/>
 				</Grid>
 			</TabItem>
-			<TabItem Header="Budżet" Width="100">
-				<Grid Background="#FFE5E5E5"/>
+			<TabItem Header="Rośliny" Width="100" IsSelected="True">
+				<Grid Background="#FFE5E5E5" Height="440" VerticalAlignment="Top">
+					<Image x:Name="image" HorizontalAlignment="Right" Height="374" Margin="0,25,10,0" VerticalAlignment="Top" Width="546" Source="/Rzut_1.png"/>
+					<Button x:Name="bPlantInventory" Content="Spis roślin" HorizontalAlignment="Left" Margin="30,40,0,0" VerticalAlignment="Top" Width="145"/>
+					<Separator HorizontalAlignment="Left" Margin="15,80,0,0" VerticalAlignment="Top" Width="300"/>
+					<Button x:Name="bFertilizationSchedule" Content="Harmonogram nawożenia" HorizontalAlignment="Left" Margin="30,100,0,0" VerticalAlignment="Top" Width="145"/>
+					<Separator HorizontalAlignment="Left" Margin="15,140,0,0" VerticalAlignment="Top" Width="300"/>
+					<Button x:Name="bWatering" Content="Podlewanie" HorizontalAlignment="Left" Margin="30,160,0,0" VerticalAlignment="Top" Width="145"/>
+					<Separator HorizontalAlignment="Left" Margin="15,200,0,0" VerticalAlignment="Top" Width="300"/>
+					<Button x:Name="bPruning" Content="Przycinanie" HorizontalAlignment="Left" Margin="30,220,0,0" VerticalAlignment="Top" Width="145"/>
+					<Separator HorizontalAlignment="Left" Margin="15,260,0,0" VerticalAlignment="Top" Width="300"/>
+
+					<Button x:Name="bAddNewPlant" Content="Dodaj roślinę" HorizontalAlignment="Left" Margin="30,356,0,0" VerticalAlignment="Top" Width="145" Height="35" Click="bAddNewPlant_Click"/>
+				</Grid>
 			</TabItem>
-
 		</TabControl>
-
 	</Grid>
-
 </Window>

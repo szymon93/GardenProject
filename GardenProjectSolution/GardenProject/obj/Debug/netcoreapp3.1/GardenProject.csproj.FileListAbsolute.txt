@@ -19,3 +19,5 @@ C:\Users\szmik\OneDrive\Dokumenty\GardenProject\GardenProjectSolution\GardenProj
 C:\Users\szmik\OneDrive\Dokumenty\GardenProject\GardenProjectSolution\GardenProject\obj\Debug\netcoreapp3.1\GardenProject.genruntimeconfig.cache
 C:\Users\szmik\OneDrive\Dokumenty\GardenProject\GardenProjectSolution\GardenProject\obj\Debug\netcoreapp3.1\Menu\MenuAboutVersion.g.cs
 C:\Users\szmik\OneDrive\Dokumenty\GardenProject\GardenProjectSolution\GardenProject\obj\Debug\netcoreapp3.1\Menu\MenuAboutVersion.baml
+C:\Users\szmik\OneDrive\Dokumenty\GardenProject\GardenProjectSolution\GardenProject\obj\Debug\netcoreapp3.1\Plants\AddPlantWindow.g.cs
+C:\Users\szmik\OneDrive\Dokumenty\GardenProject\GardenProjectSolution\GardenProject\obj\Debug\netcoreapp3.1\Plants\AddPlantWindow.baml
